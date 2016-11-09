@@ -20,6 +20,7 @@
 		09C97CF51DD3838200DD2837 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CF41DD3838200DD2837 /* InterfaceController.swift */; };
 		09C97CF71DD3838200DD2837 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */; };
 		09C97CF91DD3838200DD2837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CF81DD3838200DD2837 /* Assets.xcassets */; };
+		09C97D0E1DD3874800DD2837 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C97D0D1DD3874800DD2837 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		09C97CF81DD3838200DD2837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C97CFA1DD3838200DD2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C97D0B1DD3874700DD2837 /* Health Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Health Watch.entitlements"; sourceTree = "<group>"; };
+		09C97D0D1DD3874800DD2837 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C97D0E1DD3874800DD2837 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +130,7 @@
 				09C97CE41DD3838200DD2837 /* Health Watch WatchKit App */,
 				09C97CF31DD3838200DD2837 /* Health Watch WatchKit Extension */,
 				09C97CC41DD3838200DD2837 /* Products */,
+				09C97D0C1DD3874800DD2837 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +148,7 @@
 		09C97CC51DD3838200DD2837 /* Health Watch */ = {
 			isa = PBXGroup;
 			children = (
+				09C97D0B1DD3874700DD2837 /* Health Watch.entitlements */,
 				09C97CC61DD3838200DD2837 /* AppDelegate.swift */,
 				09C97CC81DD3838200DD2837 /* ViewController.swift */,
 				09C97CCA1DD3838200DD2837 /* Main.storyboard */,
@@ -181,6 +187,14 @@
 				09C97CFA1DD3838200DD2837 /* Info.plist */,
 			);
 			path = "Health Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		09C97D0C1DD3874800DD2837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C97D0D1DD3874800DD2837 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +285,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = S656ZVC2J7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					09C97CD61DD3838200DD2837 = {
 						CreatedOnToolsVersion = 8.1;
@@ -588,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health Watch/Health Watch.entitlements";
 				DEVELOPMENT_TEAM = S656ZVC2J7;
 				INFOPLIST_FILE = "Health Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -601,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health Watch/Health Watch.entitlements";
 				DEVELOPMENT_TEAM = S656ZVC2J7;
 				INFOPLIST_FILE = "Health Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
