@@ -133,6 +133,7 @@
 				09C97D0C1DD3874800DD2837 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		09C97CC41DD3838200DD2837 /* Products */ = {
 			isa = PBXGroup;
