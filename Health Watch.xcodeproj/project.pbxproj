@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -283,7 +283,6 @@
 				TargetAttributes = {
 					09C97CC21DD3838100DD2837 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = S656ZVC2J7;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
@@ -293,24 +292,21 @@
 					};
 					09C97CD61DD3838200DD2837 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = S656ZVC2J7;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 09C97CC21DD3838100DD2837;
 					};
 					09C97CDF1DD3838200DD2837 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = S656ZVC2J7;
 						ProvisioningStyle = Automatic;
 					};
 					09C97CEE1DD3838200DD2837 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = S656ZVC2J7;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 09C97CBE1DD3838100DD2837 /* Build configuration list for PBXProject "Health Watch" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
