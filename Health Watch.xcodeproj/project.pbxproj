@@ -132,6 +132,7 @@
 				09C97CC41DD3838200DD2837 /* Products */,
 				09C97D0C1DD3874800DD2837 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
 			tabWidth = 2;
 		};
