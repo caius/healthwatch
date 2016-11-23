@@ -12,11 +12,11 @@
         <!--Healthwatch-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Healthwatch" id="AgC-eL-Hgc" customClass="RootController">
+                <controller identifier="RootController" title="Healthwatch" id="AgC-eL-Hgc" customClass="RootController">
                     <items>
                         <table alignment="center" id="yLb-N9-0o7">
                             <items>
-                                <tableRow identifier="RowController" id="0ht-ef-FZR" customClass="RootRowController" customModule="Health_Watch_WatchKit_Extension">
+                                <tableRow identifier="RootRowController" id="0ht-ef-FZR" customClass="RootRowController" customModule="Health_Watch_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" layout="vertical" spacing="0.0" id="K4V-BU-wsv">
                                         <items>
                                             <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="bLo-ex-3DU"/>
@@ -63,15 +63,26 @@
             </objects>
             <point key="canvasLocation" x="398" y="-56"/>
         </scene>
-        <!--Interface Controller-->
+        <!--ConfirmController-->
         <scene sceneID="nxS-Hn-r5L">
             <objects>
-                <controller id="DrR-BM-RsP">
+                <controller identifier="ConfirmController" id="DrR-BM-RsP" customClass="ConfirmController" customModule="Health_Watch_WatchKit_Extension">
                     <items>
                         <label width="1" height="50" alignment="left" text="Value" textAlignment="center" baselineAdjustment="alignCenters" id="4X5-r3-nyP"/>
-                        <button width="1" alignment="left" title="Confirm" id="FRu-IK-hez"/>
-                        <button width="1" alignment="left" title="Cancel" id="LLc-SX-TIA"/>
+                        <button width="1" alignment="left" title="Confirm" id="FRu-IK-hez">
+                            <connections>
+                                <action selector="confirmTapped" destination="DrR-BM-RsP" id="JJm-WP-D09"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cancel" id="LLc-SX-TIA">
+                            <connections>
+                                <action selector="cancelTapped" destination="DrR-BM-RsP" id="cnX-bU-RtR"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="label" destination="4X5-r3-nyP" id="gTc-dH-Ray"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="625.94871794871801" y="-62.333333333333336"/>

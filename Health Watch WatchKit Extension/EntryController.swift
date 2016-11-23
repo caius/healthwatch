@@ -14,6 +14,10 @@ class EntryController: WKInterfaceController {
   var pickerValues: [EntryPickerValue] = []
   var chosenValue: EntryPickerValue?
 
+  let unit = "kg"
+  let spread = 120
+  let increment = Double(0.1)
+
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
 
@@ -22,9 +26,6 @@ class EntryController: WKInterfaceController {
     }
 
     let initialWeight = context as! Double
-    let unit = "kg"
-    let spread = 120
-    let increment = Double(0.1)
 
     for multiplier in 0...spread {
       let value = initialWeight + (increment * Double(multiplier))
@@ -46,21 +47,14 @@ class EntryController: WKInterfaceController {
   }
 
   @IBAction func saveTapped() {
-    exitingWith {
-      print("Saving!")
-      print("Chosen value is \(chosenValue!.title)")
-    }
+    print("Saving!")
+    print("Chosen value is \(chosenValue!.title)")
+    pushController(withName: "ConfirmController", context: ["value": chosenValue])
   }
 
   @IBAction func cancelTapped() {
-    exitingWith {
-      print("Cancelling - doing nowt")
-    }
-  }
-
-  private func exitingWith(completion: () -> Void) {
-    picker.resignFocus()
-    completion()
+    print("Cancelling - doing nowt")
     popToRootController()
   }
+
 }
