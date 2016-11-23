@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096426531DE538710037DADD /* EntryPickerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426521DE538710037DADD /* EntryPickerValue.swift */; };
+		096426551DE53A130037DADD /* ConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426541DE53A130037DADD /* ConfirmController.swift */; };
+		0978B86E1DD71AF50053B66C /* RootRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978B86D1DD71AF50053B66C /* RootRowController.swift */; };
+		0978B8701DDFC8B90053B66C /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978B86F1DDFC8B90053B66C /* EntryController.swift */; };
 		09C97CC71DD3838200DD2837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CC61DD3838200DD2837 /* AppDelegate.swift */; };
 		09C97CC91DD3838200DD2837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CC81DD3838200DD2837 /* ViewController.swift */; };
 		09C97CCC1DD3838200DD2837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CCA1DD3838200DD2837 /* Main.storyboard */; };
@@ -17,7 +21,7 @@
 		09C97CE71DD3838200DD2837 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CE51DD3838200DD2837 /* Interface.storyboard */; };
 		09C97CE91DD3838200DD2837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CE81DD3838200DD2837 /* Assets.xcassets */; };
 		09C97CF01DD3838200DD2837 /* Health Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 09C97CEF1DD3838200DD2837 /* Health Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		09C97CF51DD3838200DD2837 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CF41DD3838200DD2837 /* InterfaceController.swift */; };
+		09C97CF51DD3838200DD2837 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CF41DD3838200DD2837 /* RootController.swift */; };
 		09C97CF71DD3838200DD2837 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */; };
 		09C97CF91DD3838200DD2837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CF81DD3838200DD2837 /* Assets.xcassets */; };
 		09C97D0E1DD3874800DD2837 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C97D0D1DD3874800DD2837 /* HealthKit.framework */; };
@@ -73,6 +77,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		096426521DE538710037DADD /* EntryPickerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPickerValue.swift; sourceTree = "<group>"; };
+		096426541DE53A130037DADD /* ConfirmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmController.swift; sourceTree = "<group>"; };
+		0978B86D1DD71AF50053B66C /* RootRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRowController.swift; sourceTree = "<group>"; };
+		0978B86F1DDFC8B90053B66C /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		09C97CC31DD3838200DD2837 /* Health Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Health Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C97CC61DD3838200DD2837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C97CC81DD3838200DD2837 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +96,7 @@
 		09C97CE81DD3838200DD2837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C97CEA1DD3838200DD2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C97CEF1DD3838200DD2837 /* Health Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Health Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		09C97CF41DD3838200DD2837 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		09C97CF41DD3838200DD2837 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		09C97CF81DD3838200DD2837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C97CFA1DD3838200DD2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +130,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096426561DE53A220037DADD /* RootController */ = {
+			isa = PBXGroup;
+			children = (
+				09C97CF41DD3838200DD2837 /* RootController.swift */,
+				0978B86D1DD71AF50053B66C /* RootRowController.swift */,
+			);
+			name = RootController;
+			sourceTree = "<group>";
+		};
+		096426571DE53A2E0037DADD /* EntryController */ = {
+			isa = PBXGroup;
+			children = (
+				0978B86F1DDFC8B90053B66C /* EntryController.swift */,
+				096426521DE538710037DADD /* EntryPickerValue.swift */,
+			);
+			name = EntryController;
+			sourceTree = "<group>";
+		};
+		096426581DE53A4C0037DADD /* ConfirmController */ = {
+			isa = PBXGroup;
+			children = (
+				096426541DE53A130037DADD /* ConfirmController.swift */,
+			);
+			name = ConfirmController;
+			sourceTree = "<group>";
+		};
 		09C97CBA1DD3838100DD2837 = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +217,9 @@
 		09C97CF31DD3838200DD2837 /* Health Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				09C97CF41DD3838200DD2837 /* InterfaceController.swift */,
+				096426561DE53A220037DADD /* RootController */,
+				096426571DE53A2E0037DADD /* EntryController */,
+				096426581DE53A4C0037DADD /* ConfirmController */,
 				09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */,
 				09C97CF81DD3838200DD2837 /* Assets.xcassets */,
 				09C97CFA1DD3838200DD2837 /* Info.plist */,
@@ -307,7 +343,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 09C97CBE1DD3838100DD2837 /* Build configuration list for PBXProject "Health Watch" */;
+			buildConfigurationList = 09C97CBE1DD3838100DD2837 /* Build configuration list for PBXProject "Healthwatch" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -387,8 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0978B8701DDFC8B90053B66C /* EntryController.swift in Sources */,
+				0978B86E1DD71AF50053B66C /* RootRowController.swift in Sources */,
 				09C97CF71DD3838200DD2837 /* ExtensionDelegate.swift in Sources */,
-				09C97CF51DD3838200DD2837 /* InterfaceController.swift in Sources */,
+				09C97CF51DD3838200DD2837 /* RootController.swift in Sources */,
+				096426551DE53A130037DADD /* ConfirmController.swift in Sources */,
+				096426531DE538710037DADD /* EntryPickerValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,7 +702,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09C97CBE1DD3838100DD2837 /* Build configuration list for PBXProject "Health Watch" */ = {
+		09C97CBE1DD3838100DD2837 /* Build configuration list for PBXProject "Healthwatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09C97CFB1DD3838200DD2837 /* Debug */,
@@ -678,6 +718,7 @@
 				09C97CFF1DD3838200DD2837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C97D011DD3838200DD2837 /* Build configuration list for PBXNativeTarget "Health Watch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -686,6 +727,7 @@
 				09C97D031DD3838200DD2837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C97D051DD3838200DD2837 /* Build configuration list for PBXNativeTarget "Health Watch" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +736,7 @@
 				09C97D071DD3838200DD2837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C97D081DD3838200DD2837 /* Build configuration list for PBXNativeTarget "Health WatchTests" */ = {
 			isa = XCConfigurationList;
@@ -702,6 +745,7 @@
 				09C97D0A1DD3838200DD2837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
