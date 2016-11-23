@@ -22,4 +22,5 @@ class EntryPickerValue {
     item.title = self.title
     return item
   }
+
 }
