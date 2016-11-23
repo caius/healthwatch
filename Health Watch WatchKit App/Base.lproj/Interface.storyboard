@@ -12,7 +12,7 @@
         <!--Healthwatch-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="RootController" title="Healthwatch" id="AgC-eL-Hgc" customClass="RootController">
+                <controller identifier="RootController" title="Healthwatch" id="AgC-eL-Hgc" customClass="RootController" customModule="Health_Watch_WatchKit_Extension">
                     <items>
                         <table alignment="center" id="yLb-N9-0o7">
                             <items>
@@ -81,7 +81,7 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="label" destination="4X5-r3-nyP" id="gTc-dH-Ray"/>
+                        <outlet property="valueLabel" destination="4X5-r3-nyP" id="82g-Ta-VPc"/>
                     </connections>
                 </controller>
             </objects>
