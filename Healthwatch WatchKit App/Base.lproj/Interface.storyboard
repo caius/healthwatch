@@ -12,11 +12,11 @@
         <!--Healthwatch-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="RootController" title="Healthwatch" id="AgC-eL-Hgc" customClass="RootController" customModule="Health_Watch_WatchKit_Extension">
+                <controller identifier="RootController" title="Healthwatch" id="AgC-eL-Hgc" customClass="RootController" customModule="Healthwatch_WatchKit_Extension">
                     <items>
                         <table alignment="center" id="yLb-N9-0o7">
                             <items>
-                                <tableRow identifier="RootRowController" id="0ht-ef-FZR" customClass="RootRowController" customModule="Health_Watch_WatchKit_Extension">
+                                <tableRow identifier="RootRowController" id="0ht-ef-FZR" customClass="RootRowController" customModule="Healthwatch_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" layout="vertical" spacing="0.0" id="K4V-BU-wsv">
                                         <items>
                                             <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="bLo-ex-3DU"/>
@@ -39,7 +39,7 @@
         <!--EntryController-->
         <scene sceneID="Zxb-Ky-KDa">
             <objects>
-                <controller identifier="EntryController" id="uda-pZ-AwD" customClass="EntryController" customModule="Health_Watch_WatchKit_Extension">
+                <controller identifier="EntryController" id="uda-pZ-AwD" customClass="EntryController" customModule="Healthwatch_WatchKit_Extension">
                     <items>
                         <picker width="1" height="100" alignment="left" id="neQ-Tt-Hsv">
                             <connections>
@@ -66,7 +66,7 @@
         <!--ConfirmController-->
         <scene sceneID="nxS-Hn-r5L">
             <objects>
-                <controller identifier="ConfirmController" id="DrR-BM-RsP" customClass="ConfirmController" customModule="Health_Watch_WatchKit_Extension">
+                <controller identifier="ConfirmController" id="DrR-BM-RsP" customClass="ConfirmController" customModule="Healthwatch_WatchKit_Extension">
                     <items>
                         <label width="1" height="50" alignment="left" text="Value" textAlignment="center" baselineAdjustment="alignCenters" id="4X5-r3-nyP"/>
                         <button width="1" alignment="left" title="Confirm" id="FRu-IK-hez">

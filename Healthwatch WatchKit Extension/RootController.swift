@@ -1,6 +1,6 @@
 //
 //  InterfaceController.swift
-//  Health Watch WatchKit Extension
+//  Healthwatch WatchKit Extension
 //
 //  Created by Caius Durling on 09/11/2016.
 //  Copyright © 2016 Caius Durling. All rights reserved.
@@ -32,10 +32,11 @@ class RootController: WKInterfaceController {
     switch rowIndex {
     case 0: // Weight
       print("Weight!")
-      pushController(withName: "EntryController", context: 118.1)
+      pushController(withName: "EntryController", context: EntryPickerValue(value: 118.1, unit: "kg"))
 
     case 1: // Fat %
       print("Fat %!")
+//      pushController(withName: "EntryController", context: EntryPickerValue(value: 23.5, unit: "%"))
 
     default:
       fatalError("Unknown menu item tapped")

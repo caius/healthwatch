@@ -1,6 +1,6 @@
 //
 //  ExtensionDelegate.swift
-//  Health Watch WatchKit Extension
+//  Healthwatch WatchKit Extension
 //
 //  Created by Caius Durling on 09/11/2016.
 //  Copyright © 2016 Caius Durling. All rights reserved.

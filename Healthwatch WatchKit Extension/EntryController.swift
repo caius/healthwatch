@@ -1,6 +1,6 @@
 //
 //  WeightEntryController.swift
-//  Health Watch
+//  Healthwatch
 //
 //  Created by Caius Durling on 18/11/2016.
 //  Copyright © 2016 Caius Durling. All rights reserved.
@@ -12,9 +12,8 @@ class EntryController: WKInterfaceController {
   @IBOutlet var picker: WKInterfacePicker!
 
   var pickerValues: [EntryPickerValue] = []
-  var chosenValue: EntryPickerValue?
+  var chosenValue: EntryPickerValue!
 
-  let unit = "kg"
   let spread = 120
   let increment = Double(0.1)
 
@@ -25,11 +24,12 @@ class EntryController: WKInterfaceController {
       fatalError("No context provided to ValueInputInterfaceController")
     }
 
-    let initialWeight = context as! Double
+    let initialWeight = context as! EntryPickerValue
+    self.chosenValue = initialWeight
 
     for multiplier in 0...spread {
-      let value = initialWeight + (increment * Double(multiplier))
-      let pickerValue = EntryPickerValue(value: value, unit: unit)
+      let value = initialWeight.value + (increment * Double(multiplier))
+      let pickerValue = EntryPickerValue(value: value, unit: initialWeight.unit)
       pickerValues.append(pickerValue)
     }
 
@@ -43,12 +43,12 @@ class EntryController: WKInterfaceController {
 
   @IBAction func pickerChanged(_ pickedIndex: Int) {
     self.chosenValue = pickerValues[pickedIndex]
-    print("Chosen value: \(chosenValue!.title)")
+    print("Chosen value: \(chosenValue.title)")
   }
 
   @IBAction func saveTapped() {
     print("Saving!")
-    print("Chosen value is \(chosenValue!.title)")
+    print("Chosen value is \(chosenValue.title)")
     pushController(withName: "ConfirmController", context: ["value": chosenValue])
   }
 

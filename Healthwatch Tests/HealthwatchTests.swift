@@ -1,15 +1,15 @@
 //
-//  Health_WatchTests.swift
-//  Health WatchTests
+//  Healthwatch Tests.swift
+//  Healthwatch Tests
 //
 //  Created by Caius Durling on 09/11/2016.
 //  Copyright © 2016 Caius Durling. All rights reserved.
 //
 
 import XCTest
-@testable import Health_Watch
+@testable import Healthwatch
 
-class Health_WatchTests: XCTestCase {
+class Healthwatch Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
