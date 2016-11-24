@@ -16,7 +16,7 @@
 		09C97CCC1DD3838200DD2837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CCA1DD3838200DD2837 /* Main.storyboard */; };
 		09C97CCE1DD3838200DD2837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CCD1DD3838200DD2837 /* Assets.xcassets */; };
 		09C97CD11DD3838200DD2837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CCF1DD3838200DD2837 /* LaunchScreen.storyboard */; };
-		09C97CDC1DD3838200DD2837 /* Healthwatch Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CDB1DD3838200DD2837 /* Healthwatch Tests.swift */; };
+		09C97CDC1DD3838200DD2837 /* HealthwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CDB1DD3838200DD2837 /* HealthwatchTests.swift */; };
 		09C97CE11DD3838200DD2837 /* Healthwatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 09C97CE01DD3838200DD2837 /* Healthwatch WatchKit App.app */; };
 		09C97CE71DD3838200DD2837 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CE51DD3838200DD2837 /* Interface.storyboard */; };
 		09C97CE91DD3838200DD2837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CE81DD3838200DD2837 /* Assets.xcassets */; };
@@ -89,7 +89,7 @@
 		09C97CD01DD3838200DD2837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C97CD21DD3838200DD2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C97CD71DD3838200DD2837 /* Healthwatch Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Healthwatch Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		09C97CDB1DD3838200DD2837 /* Healthwatch Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthwatch Tests.swift; sourceTree = "<group>"; };
+		09C97CDB1DD3838200DD2837 /* HealthwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthwatchTests.swift; sourceTree = "<group>"; };
 		09C97CDD1DD3838200DD2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C97CE01DD3838200DD2837 /* Healthwatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Healthwatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C97CE61DD3838200DD2837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 		09C97CDA1DD3838200DD2837 /* Healthwatch Tests */ = {
 			isa = PBXGroup;
 			children = (
-				09C97CDB1DD3838200DD2837 /* Healthwatch Tests.swift */,
+				09C97CDB1DD3838200DD2837 /* HealthwatchTests.swift */,
 				09C97CDD1DD3838200DD2837 /* Info.plist */,
 			);
 			name = "Healthwatch Tests";
@@ -419,7 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C97CDC1DD3838200DD2837 /* Healthwatch Tests.swift in Sources */,
+				09C97CDC1DD3838200DD2837 /* HealthwatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,9 +679,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = S656ZVC2J7;
-				INFOPLIST_FILE = Healthwatch Tests/Info.plist;
+				INFOPLIST_FILE = "Healthwatch Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swedishcampground.Healthwatch Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swedishcampground.Healthwatch Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healthwatch.app/Healthwatch";
@@ -694,9 +694,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = S656ZVC2J7;
-				INFOPLIST_FILE = Healthwatch Tests/Info.plist;
+				INFOPLIST_FILE = "Healthwatch Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swedishcampground.Healthwatch Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swedishcampground.Healthwatch Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healthwatch.app/Healthwatch";
