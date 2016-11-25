@@ -51,10 +51,14 @@
                         </separator>
                         <button width="1" alignment="left" title="Save" id="0SE-M7-EBH">
                             <connections>
-                                <action selector="saveTapped" destination="uda-pZ-AwD" id="gM6-zR-2gI"/>
+                                <action selector="saveTapped" destination="uda-pZ-AwD" id="xk9-gi-OUL"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Cancel" id="UhN-xg-joM"/>
+                        <button width="1" alignment="left" title="Cancel" id="UhN-xg-joM">
+                            <connections>
+                                <action selector="cancelTapped" destination="uda-pZ-AwD" id="h46-9B-nIt"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="picker" destination="neQ-Tt-Hsv" id="DWw-pC-qUL"/>

@@ -36,7 +36,7 @@ class RootController: WKInterfaceController {
 
     case 1: // Fat %
       print("Fat %!")
-//      pushController(withName: "EntryController", context: HWValue(value: 23.5, unit: "%"))
+      pushController(withName: "EntryController", context: HWValue(value: 23.5, unit: "%"))
 
     default:
       fatalError("Unknown menu item tapped")
