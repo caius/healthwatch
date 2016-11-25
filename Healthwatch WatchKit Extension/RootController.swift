@@ -32,11 +32,11 @@ class RootController: WKInterfaceController {
     switch rowIndex {
     case 0: // Weight
       print("Weight!")
-      pushController(withName: "EntryController", context: EntryPickerValue(value: 118.1, unit: "kg"))
+      pushController(withName: "EntryController", context: HWValue(value: 118.1, unit: "kg"))
 
     case 1: // Fat %
       print("Fat %!")
-//      pushController(withName: "EntryController", context: EntryPickerValue(value: 23.5, unit: "%"))
+//      pushController(withName: "EntryController", context: HWValue(value: 23.5, unit: "%"))
 
     default:
       fatalError("Unknown menu item tapped")

@@ -1,14 +1,12 @@
 //
-//  EntryPickerValue.swift
+//  HWValue.swift
 //  Healthwatch
 //
 //  Created by Caius Durling on 23/11/2016.
 //  Copyright © 2016 Caius Durling. All rights reserved.
 //
 
-import WatchKit
-
-class EntryPickerValue {
+class HWValue {
   let title: String
   let value: Double
   let unit: String
@@ -19,14 +17,8 @@ class EntryPickerValue {
     self.title = "\(value) \(unit)"
   }
 
-  func pickerItem() -> WKPickerItem {
-    let item = WKPickerItem()
-    item.title = self.title
-    return item
-  }
-
   func description() -> String {
-    return "EntryPickerValue(\(title))"
+    return "HWValue(\(title))"
   }
 
 }

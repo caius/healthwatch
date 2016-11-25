@@ -12,12 +12,12 @@ class ConfirmController: WKInterfaceController {
 
   @IBOutlet var valueLabel: WKInterfaceLabel!
 
-  var chosenValue: EntryPickerValue!
+  var chosenValue: HWValue!
 
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
 
-    self.chosenValue = (context as! [String: Any])["value"] as! EntryPickerValue
+    self.chosenValue = (context as! [String: Any])["value"] as! HWValue
 
     guard chosenValue != nil else {
       fatalError("No value passed to ConfirmController")

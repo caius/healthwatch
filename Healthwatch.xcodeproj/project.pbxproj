@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		096426531DE538710037DADD /* EntryPickerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426521DE538710037DADD /* EntryPickerValue.swift */; };
+		096426531DE538710037DADD /* HWValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426521DE538710037DADD /* HWValue.swift */; };
 		096426551DE53A130037DADD /* ConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426541DE53A130037DADD /* ConfirmController.swift */; };
 		0978B86E1DD71AF50053B66C /* RootRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978B86D1DD71AF50053B66C /* RootRowController.swift */; };
 		0978B8701DDFC8B90053B66C /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978B86F1DDFC8B90053B66C /* EntryController.swift */; };
+		09B538B71DE7B4C00011C9CA /* HWValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426521DE538710037DADD /* HWValue.swift */; };
+		09B538B81DE7B4C30011C9CA /* HWValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426521DE538710037DADD /* HWValue.swift */; };
+		09B538BA1DE7B55A0011C9CA /* HWValueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B538B91DE7B55A0011C9CA /* HWValueExtension.swift */; };
 		09C97CC71DD3838200DD2837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CC61DD3838200DD2837 /* AppDelegate.swift */; };
 		09C97CC91DD3838200DD2837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97CC81DD3838200DD2837 /* ViewController.swift */; };
 		09C97CCC1DD3838200DD2837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C97CCA1DD3838200DD2837 /* Main.storyboard */; };
@@ -77,11 +80,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		096426521DE538710037DADD /* EntryPickerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPickerValue.swift; sourceTree = "<group>"; };
-		096426541DE53A130037DADD /* ConfirmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmController.swift; sourceTree = "<group>"; };
+		096426521DE538710037DADD /* HWValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = HWValue.swift; path = "Healthwatch WatchKit Extension/HWValue.swift"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		096426541DE53A130037DADD /* ConfirmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ConfirmController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0978B86D1DD71AF50053B66C /* RootRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRowController.swift; sourceTree = "<group>"; };
-		0978B86F1DDFC8B90053B66C /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
-		09C97CC31DD3838200DD2837 /* Healthwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Healthwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0978B86F1DDFC8B90053B66C /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EntryController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		09B538B91DE7B55A0011C9CA /* HWValueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWValueExtension.swift; sourceTree = "<group>"; };
+		09C97CC31DD3838200DD2837 /* Healthwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C97CC61DD3838200DD2837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C97CC81DD3838200DD2837 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09C97CCB1DD3838200DD2837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,7 +100,7 @@
 		09C97CE81DD3838200DD2837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C97CEA1DD3838200DD2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C97CEF1DD3838200DD2837 /* Healthwatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Healthwatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		09C97CF41DD3838200DD2837 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		09C97CF41DD3838200DD2837 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RootController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		09C97CF81DD3838200DD2837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C97CFA1DD3838200DD2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				0978B86F1DDFC8B90053B66C /* EntryController.swift */,
-				096426521DE538710037DADD /* EntryPickerValue.swift */,
 			);
 			name = EntryController;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				09C97CCD1DD3838200DD2837 /* Assets.xcassets */,
 				09C97CCF1DD3838200DD2837 /* LaunchScreen.storyboard */,
 				09C97CD21DD3838200DD2837 /* Info.plist */,
+				096426521DE538710037DADD /* HWValue.swift */,
 			);
 			name = Healthwatch;
 			path = "Healthwatch";
@@ -226,6 +230,7 @@
 				09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */,
 				09C97CF81DD3838200DD2837 /* Assets.xcassets */,
 				09C97CFA1DD3838200DD2837 /* Info.plist */,
+				09B538B91DE7B55A0011C9CA /* HWValueExtension.swift */,
 			);
 			name = "Healthwatch WatchKit Extension";
 			path = "Healthwatch WatchKit Extension";
@@ -411,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C97CC91DD3838200DD2837 /* ViewController.swift in Sources */,
+				09B538B71DE7B4C00011C9CA /* HWValue.swift in Sources */,
 				09C97CC71DD3838200DD2837 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B538B81DE7B4C30011C9CA /* HWValue.swift in Sources */,
 				09C97CDC1DD3838200DD2837 /* HealthwatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +439,8 @@
 				09C97CF71DD3838200DD2837 /* ExtensionDelegate.swift in Sources */,
 				09C97CF51DD3838200DD2837 /* RootController.swift in Sources */,
 				096426551DE53A130037DADD /* ConfirmController.swift in Sources */,
-				096426531DE538710037DADD /* EntryPickerValue.swift in Sources */,
+				096426531DE538710037DADD /* HWValue.swift in Sources */,
+				09B538BA1DE7B55A0011C9CA /* HWValueExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

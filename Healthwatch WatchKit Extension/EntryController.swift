@@ -11,8 +11,8 @@ import WatchKit
 class EntryController: WKInterfaceController {
   @IBOutlet var picker: WKInterfacePicker!
 
-  var pickerValues: [EntryPickerValue] = []
-  var chosenValue: EntryPickerValue!
+  var pickerValues: [HWValue] = []
+  var chosenValue: HWValue!
 
   let spread = 120
   let increment = Double(0.1)
@@ -24,12 +24,12 @@ class EntryController: WKInterfaceController {
       fatalError("No context provided to ValueInputInterfaceController")
     }
 
-    let initialWeight = context as! EntryPickerValue
+    let initialWeight = context as! HWValue
     self.chosenValue = initialWeight
 
     for multiplier in 0...spread {
       let value = initialWeight.value + (increment * Double(multiplier))
-      let pickerValue = EntryPickerValue(value: value, unit: initialWeight.unit)
+      let pickerValue = HWValue(value: value, unit: initialWeight.unit)
       pickerValues.append(pickerValue)
     }
 
