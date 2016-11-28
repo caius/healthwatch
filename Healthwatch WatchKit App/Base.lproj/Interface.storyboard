@@ -19,11 +19,12 @@
                                 <tableRow identifier="RootRowController" id="0ht-ef-FZR" customClass="RootRowController" customModule="Healthwatch_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" layout="vertical" spacing="0.0" id="K4V-BU-wsv">
                                         <items>
-                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="bLo-ex-3DU"/>
+                                            <label width="1" height="1" alignment="left" text="Label" textAlignment="center" baselineAdjustment="alignCenters" id="stM-UU-maq"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="label" destination="bLo-ex-3DU" id="8bc-6D-JGM"/>
+                                        <outlet property="label" destination="stM-UU-maq" id="Wp2-X5-Vmq"/>
+                                        <segue destination="uda-pZ-AwD" kind="push" id="UD0-77-dmI"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -54,42 +55,13 @@
                                 <action selector="saveTapped" destination="uda-pZ-AwD" id="xk9-gi-OUL"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Cancel" id="UhN-xg-joM">
-                            <connections>
-                                <action selector="cancelTapped" destination="uda-pZ-AwD" id="h46-9B-nIt"/>
-                            </connections>
-                        </button>
                     </items>
                     <connections>
                         <outlet property="picker" destination="neQ-Tt-Hsv" id="DWw-pC-qUL"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="398" y="-56"/>
-        </scene>
-        <!--ConfirmController-->
-        <scene sceneID="nxS-Hn-r5L">
-            <objects>
-                <controller identifier="ConfirmController" id="DrR-BM-RsP" customClass="ConfirmController" customModule="Healthwatch_WatchKit_Extension">
-                    <items>
-                        <label width="1" height="50" alignment="left" text="Value" textAlignment="center" baselineAdjustment="alignCenters" id="4X5-r3-nyP"/>
-                        <button width="1" alignment="left" title="Confirm" id="FRu-IK-hez">
-                            <connections>
-                                <action selector="confirmTapped" destination="DrR-BM-RsP" id="JJm-WP-D09"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Cancel" id="LLc-SX-TIA">
-                            <connections>
-                                <action selector="cancelTapped" destination="DrR-BM-RsP" id="cnX-bU-RtR"/>
-                            </connections>
-                        </button>
-                    </items>
-                    <connections>
-                        <outlet property="valueLabel" destination="4X5-r3-nyP" id="82g-Ta-VPc"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="625.94871794871801" y="-62.333333333333336"/>
+            <point key="canvasLocation" x="424" y="-62"/>
         </scene>
     </scenes>
 </document>

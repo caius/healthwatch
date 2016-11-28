@@ -19,7 +19,7 @@ class EntryController: WKInterfaceController {
 
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
-
+/*
     self.setTitle("cancel")
 
     guard context != nil else {
@@ -30,7 +30,6 @@ class EntryController: WKInterfaceController {
     self.chosenValue = initialWeight
 
     let offset = (Double(spread) * Double(increment))/2.0
-    print(offset)
     let base = initialWeight.value - offset
     for multiplier in 0...spread {
       let value = base + (increment * Double(multiplier))
@@ -48,6 +47,7 @@ class EntryController: WKInterfaceController {
     }
     picker.setSelectedItemIndex(selectedIndex!)
     picker.focus()
+*/
   }
 
   @IBAction func pickerChanged(_ pickedIndex: Int) {
@@ -56,14 +56,21 @@ class EntryController: WKInterfaceController {
   }
 
   @IBAction func saveTapped() {
-    print("Saving!")
-    print("Chosen value is \(chosenValue.title)")
-    pushController(withName: "ConfirmController", context: ["value": chosenValue])
-  }
+    let saveAction = WKAlertAction(title: "Save", style: WKAlertActionStyle.default) {
+      print("Saving confirmed")
+    }
+    let discardAction = WKAlertAction(title: "Discard", style: WKAlertActionStyle.destructive) {
+      self.popToRootController()
+    }
+    let cancelAction = WKAlertAction(title: "Cancel", style: WKAlertActionStyle.cancel) {
+      self.popToRootController()
+    }
 
-  @IBAction func cancelTapped() {
-    print("Cancelling - doing nowt")
-    popToRootController()
+    presentAlert(
+      withTitle: "118.1kg",
+      message: "Save this value?",
+      preferredStyle: WKAlertControllerStyle.actionSheet,
+      actions: [saveAction, discardAction, cancelAction]
+    )
   }
-
 }
