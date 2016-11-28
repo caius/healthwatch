@@ -22,8 +22,6 @@ class RootController: WKInterfaceController {
 
   @IBOutlet var table: WKInterfaceTable!
 
-  let buttons = ["Weight", "Fat %"]
-
   let menuChoices: [RootMenuItem] = [
     RootMenuItem(title: "Body Fat %") { () -> HWValue in
       return HWValue(value: 23.3, unit: "%")
@@ -39,7 +37,7 @@ class RootController: WKInterfaceController {
 
     // Configure interface objects here.
 
-    table.setNumberOfRows(buttons.count, withRowType: "RootRowController")
+    table.setNumberOfRows(menuChoices.count, withRowType: "RootRowController")
     // TODO: Figure out & fix for loop
     // Fails with "Expression type '[RootMenuItem]' is ambiguous without more context" ?!
     // for (index, menuItem) in menuChoices {
@@ -51,9 +49,9 @@ class RootController: WKInterfaceController {
   }
 
   override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
+    let menuItem = menuChoices[rowIndex]
 
-
-    return [HWValue(value: 118.1, unit: "kg")]
+    return ["initialValue": menuItem.initialValue()]
   }
 
   /*

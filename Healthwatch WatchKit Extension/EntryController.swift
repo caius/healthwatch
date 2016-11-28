@@ -19,21 +19,22 @@ class EntryController: WKInterfaceController {
 
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
-/*
-    self.setTitle("cancel")
 
-    guard context != nil else {
+    let context: [String: Any] = context as! [String: Any]
+
+    guard context["initialValue"] != nil else {
       fatalError("No context provided to ValueInputInterfaceController")
     }
 
-    let initialWeight = context as! HWValue
-    self.chosenValue = initialWeight
+    let initialValue = context["initialValue"] as! HWValue
+
+    self.chosenValue = initialValue
 
     let offset = (Double(spread) * Double(increment))/2.0
-    let base = initialWeight.value - offset
+    let base = initialValue.value - offset
     for multiplier in 0...spread {
       let value = base + (increment * Double(multiplier))
-      let pickerValue = HWValue(value: value, unit: initialWeight.unit)
+      let pickerValue = HWValue(value: value, unit: initialValue.unit)
       pickerValues.append(pickerValue)
     }
 
@@ -43,11 +44,10 @@ class EntryController: WKInterfaceController {
 
     picker.setItems(items)
     let selectedIndex = items.index { (item) -> Bool in
-      item.title == initialWeight.title
+      item.title == initialValue.title
     }
     picker.setSelectedItemIndex(selectedIndex!)
     picker.focus()
-*/
   }
 
   @IBAction func pickerChanged(_ pickedIndex: Int) {
