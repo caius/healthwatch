@@ -26,10 +26,10 @@ class RootController: WKInterfaceController {
 
   let menuChoices: [RootMenuItem] = [
     RootMenuItem(title: "Body Fat %") { () -> HWValue in
-      return HWValue(value: 118.1, unit: "kg")
+      return HWValue(value: 23.3, unit: "%")
     },
     RootMenuItem(title: "Weight") { () -> HWValue in
-      return HWValue(value: 23.3, unit: "%")
+      return HWValue(value: 118.1, unit: "kg")
     }
 
   ]
