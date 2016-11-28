@@ -20,21 +20,21 @@ class EntryController: WKInterfaceController {
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
 
-    self.setTitle("cancel")
+    let context: [String: Any] = context as! [String: Any]
 
-    guard context != nil else {
+    guard context["initialValue"] != nil else {
       fatalError("No context provided to ValueInputInterfaceController")
     }
 
-    let initialWeight = context as! HWValue
-    self.chosenValue = initialWeight
+    let initialValue = context["initialValue"] as! HWValue
+
+    self.chosenValue = initialValue
 
     let offset = (Double(spread) * Double(increment))/2.0
-    print(offset)
-    let base = initialWeight.value - offset
+    let base = initialValue.value - offset
     for multiplier in 0...spread {
       let value = base + (increment * Double(multiplier))
-      let pickerValue = HWValue(value: value, unit: initialWeight.unit)
+      let pickerValue = HWValue(value: value, unit: initialValue.unit)
       pickerValues.append(pickerValue)
     }
 
@@ -44,7 +44,7 @@ class EntryController: WKInterfaceController {
 
     picker.setItems(items)
     let selectedIndex = items.index { (item) -> Bool in
-      item.title == initialWeight.title
+      item.title == initialValue.title
     }
     picker.setSelectedItemIndex(selectedIndex!)
     picker.focus()
@@ -56,14 +56,21 @@ class EntryController: WKInterfaceController {
   }
 
   @IBAction func saveTapped() {
-    print("Saving!")
-    print("Chosen value is \(chosenValue.title)")
-    pushController(withName: "ConfirmController", context: ["value": chosenValue])
-  }
+    let saveAction = WKAlertAction(title: "Save", style: WKAlertActionStyle.default) {
+      print("Saving confirmed")
+    }
+    let discardAction = WKAlertAction(title: "Discard", style: WKAlertActionStyle.destructive) {
+      self.popToRootController()
+    }
+    let cancelAction = WKAlertAction(title: "Cancel", style: WKAlertActionStyle.cancel) {
+      self.popToRootController()
+    }
 
-  @IBAction func cancelTapped() {
-    print("Cancelling - doing nowt")
-    popToRootController()
+    presentAlert(
+      withTitle: "118.1kg",
+      message: "Save this value?",
+      preferredStyle: WKAlertControllerStyle.actionSheet,
+      actions: [saveAction, discardAction, cancelAction]
+    )
   }
-
 }

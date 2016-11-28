@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		096426531DE538710037DADD /* HWValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426521DE538710037DADD /* HWValue.swift */; };
-		096426551DE53A130037DADD /* ConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426541DE53A130037DADD /* ConfirmController.swift */; };
 		0978B86E1DD71AF50053B66C /* RootRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978B86D1DD71AF50053B66C /* RootRowController.swift */; };
 		0978B8701DDFC8B90053B66C /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978B86F1DDFC8B90053B66C /* EntryController.swift */; };
 		09B538B71DE7B4C00011C9CA /* HWValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096426521DE538710037DADD /* HWValue.swift */; };
@@ -81,7 +80,6 @@
 
 /* Begin PBXFileReference section */
 		096426521DE538710037DADD /* HWValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = HWValue.swift; path = "Healthwatch WatchKit Extension/HWValue.swift"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		096426541DE53A130037DADD /* ConfirmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ConfirmController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0978B86D1DD71AF50053B66C /* RootRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRowController.swift; sourceTree = "<group>"; };
 		0978B86F1DDFC8B90053B66C /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EntryController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		09B538B91DE7B55A0011C9CA /* HWValueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWValueExtension.swift; sourceTree = "<group>"; };
@@ -151,14 +149,6 @@
 			name = EntryController;
 			sourceTree = "<group>";
 		};
-		096426581DE53A4C0037DADD /* ConfirmController */ = {
-			isa = PBXGroup;
-			children = (
-				096426541DE53A130037DADD /* ConfirmController.swift */,
-			);
-			name = ConfirmController;
-			sourceTree = "<group>";
-		};
 		09C97CBA1DD3838100DD2837 = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +213,6 @@
 			children = (
 				096426561DE53A220037DADD /* RootController */,
 				096426571DE53A2E0037DADD /* EntryController */,
-				096426581DE53A4C0037DADD /* ConfirmController */,
 				09C97CF61DD3838200DD2837 /* ExtensionDelegate.swift */,
 				09C97CF81DD3838200DD2837 /* Assets.xcassets */,
 				09C97CFA1DD3838200DD2837 /* Info.plist */,
@@ -434,7 +423,6 @@
 				0978B86E1DD71AF50053B66C /* RootRowController.swift in Sources */,
 				09C97CF71DD3838200DD2837 /* ExtensionDelegate.swift in Sources */,
 				09C97CF51DD3838200DD2837 /* RootController.swift in Sources */,
-				096426551DE53A130037DADD /* ConfirmController.swift in Sources */,
 				096426531DE538710037DADD /* HWValue.swift in Sources */,
 				09B538BA1DE7B55A0011C9CA /* HWValueExtension.swift in Sources */,
 			);
